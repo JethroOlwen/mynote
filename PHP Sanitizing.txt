@@ -1,0 +1,4 @@
+htmlspecialchars() => ignor html elements
+
+
+FILTER_SANITIZE_EMAIL filter trimmed whitespace throughout our input and removed dangerous characters thus preventing any HTML injection. Essentially, it filtered out any characters not allowed in emails. Once sanitized, we can safely display user inputs.

@@ -1,0 +1,8 @@
+Case to create different output
+e.q:
+select from name,
+case
+when year < 2000 then old
+when year >= 2000 then new
+end as 'category'
+from movies;

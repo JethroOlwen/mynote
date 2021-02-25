@@ -1,0 +1,17 @@
+<main>
+   <header>
+	<section>
+	   <article>
+	       <figure>
+		   <figcaption></figcaption>
+	       </figure
+	   </article>
+	</section>
+   </header>
+</main>
+<footer>
+
+</footer>
+
+<strong> bold
+<em> italic

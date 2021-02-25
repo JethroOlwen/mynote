@@ -1,0 +1,17 @@
+Join
+SELECT *
+FROM orders
+JOIN customers
+  ON orders.customer_id = customers.customer_id;
+
+When should I use INNER JOIN vs LEFT JOIN?
+
+Answer
+Depending on how we want to select the combined data, it can determine whether to use an INNER JOIN or a LEFT JOIN.
+
+Generally, we use INNER JOIN when we want to select only rows that match an ON condition. If no rows match the ON condition, then it will not return any results. This can be somewhat stricter than using a LEFT JOIN.
+
+We use a LEFT JOIN when we want every row from the first table, regardless of whether there is a matching row from the second table. This is similar to saying,
+“Return all the data from the first table no matter what. If there are any matches with the second table, provide that information as well, but if not, just fill the missing data with NULL values.”
+
+In a way, LEFT JOIN is less strict than INNER JOIN. Furthermore, the results of a LEFT JOIN will actually include all results that an INNER JOIN would have provided for the same given condition.

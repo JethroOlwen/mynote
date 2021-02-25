@@ -1,0 +1,3 @@
+$_GET => send argument via url
+$_POST = send argument without via url 
+$_REQUEST => contain argument or associative arrays of GET or Post received.

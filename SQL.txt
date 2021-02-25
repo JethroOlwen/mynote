@@ -1,0 +1,50 @@
+CREATE TABLE creates a new table.
+INSERT INTO adds a new row to a table.
+SELECT queries data from a table.
+	Like => not case sensitive
+	   'aaa_aa' => _ is a wildcard character subtitute any character
+		The Amazing Spiderman => The % not the%
+	if want to search for string char that is included in wild char,
+	uses escape character '\' e.q : 100\%
+ALTER TABLE changes an existing table.
+UPDATE edits a row in a table.
+DELETE FROM deletes rows from a table.
+    Delete with limit or condition
+	DELETE FROM table
+	WHERE condition
+	LIMIT 5;
+Constraints add information about how a column can be used. (e.q: primary key)
+
+DISTINCT : to show list of available values
+===================================================
+between for text case
+	When the values are text, BETWEEN filters the result set for within the alphabetical range.
+
+In this statement, BETWEEN filters the result set to only include movies with names that begin with the letter ‘A’ up to, but not including ones that begin with ‘J’.
+
+SELECT *
+FROM movies
+WHERE name BETWEEN 'A' AND 'J';
+However, if a movie has a name of simply ‘J’, it would actually match. This is because BETWEEN goes up to the second value — up to ‘J’. So the movie named ‘J’ would be included in the result set but not ‘Jaws’.
+
+
+AND can be use for between and combining multiple condition
+
+
+
+
+Order by : to sort the data 
+	order by name desc => z -> a, asc => a->z
+	you can also sort the data in field A but order it by field B
+
+
+/* 
+This will order on the year, then order the 
+names in reverse alphabetical 
+order, preserving the order
+of the year column.
+*/
+
+SELECT year, name
+FROM movies
+ORDER BY year ASC, name DESC;
